@@ -1,0 +1,48 @@
+#centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+}
+#ic{
+  font-size: 50px;;
+}
+.dbutton{
+  background-color: rgb(43, 38, 38);
+  color: white;
+  height:40px;
+  width: 25%;
+  border: none;
+  border-radius: 5px;
+}
+.service{
+  background-color: #f2f2f2;
+  align-items: center;
+  text-align: center;
+}
+.servicehead{
+  text-align: center;
+  align-items: center;
+}
+.web-design{
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    padding: 30px 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 80%;
+    background-color:transparent;
+    color: black;
+    border: 1px solid #e3e3e3;
+}
+.paragraph{
+  font-size: large;
+}
+.happy-client{
+ 
+  font-size: 40px;
+  color: white;
+}
