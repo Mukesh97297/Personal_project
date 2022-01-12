@@ -12,10 +12,8 @@
 .dbutton{
   background-color: rgb(43, 38, 38);
   color: white;
-  height:40px;
-  width: 25%;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .service{
   background-color: #f2f2f2;
@@ -46,3 +44,7 @@
   font-size: 40px;
   color: white;
 }
+.iconrefernce{
+  background-color: white;;
+}
+

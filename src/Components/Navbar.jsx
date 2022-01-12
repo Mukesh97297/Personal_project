@@ -11,9 +11,7 @@ import company7 from '../images/company7.jpg'
 import company from '../images/company.jpg'
 import pp from '../images/pp.jpg'
 import seema from '../images/seema.jpg'
-import {
-    FaFacebookSquare, FaSkype, FaTwitterSquare, FaWhatsappSquare,
-    FaGooglePlus, FaRocket, FaPencilAlt, FaUsers, FaRegEdit, FaTrophy, FaThumbsUp
+import {FaTwitter,FaFacebookF,FaWhatsapp,FaRocket,FaGooglePlusG,FaLinkedinIn, FaPencilAlt, FaUsers, FaRegEdit, FaTrophy, FaThumbsUp
 } from "react-icons/fa";
 import { MdOutlineComputer, MdOutlineSettingsSuggest, MdPhoneIphone, MdSupport } from "react-icons/md";
 import CountUp from 'react-countup';
@@ -23,42 +21,46 @@ import Carousel from 'react-bootstrap/Carousel';
 function Navbar() {
     return (
         <div>
-            <nav className='navbar navbar-expand-lg navbar-light bg-light  fixed-top'>
-                <div className='container'>
-                    <a className='navbar-brand logo' href="/">
-                        <img src={mukesh} height='60px' width='60px;' className='rounded-pill' alt='logo' />
-                    </a>
-                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                        aria-controls="navbarCollapse" aria-expanded="false">
-                        <sapn className='navbar-toggler-icon'></sapn>
-                    </button>
-                    <div className="navbar-collapse collapse" id="navbarCollapse">
-                        <ul className='navbar-nav ml-auto'>
-                            <li className='nav-item'>
-                                <a className='nav-link active' href='#home'>Home</a>
-                            </li>
-                            <li className='nav-item'>
-                                <a className='nav-link' href='#about'>About</a>
-                            </li>
-                            <li className='nav-item'>
-                                <a className='nav-link' href='#service'>Service</a>
-                            </li>
-                            <li className='nav-item'>
-                                <a className='nav-link' href='#portfolio'>Portfolio</a>
-                            </li>
-                            <li className='nav-item'>
-                                <a className='nav-link' href='#blog'>Blogs</a>
-                            </li>
-                            <li className='nav-item'>
-                                <a className='nav-link' href='#Contact Us'>Contact us</a>
-                            </li>
-                        </ul>
+            <section>
+                <nav className='navbar navbar-expand-lg navbar-light bg-light fixed-top  '>
+                    <div className='container'>
+                        <a className='navbar-brand logo' href="/">
+                            <img src={mukesh} height='60px' width='60px;' className='rounded-pill' alt='logo' />
+                        </a>
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        >
+                            <sapn className='navbar-toggler-icon'></sapn>
+                        </button>
+                        <div className="navbar-collapse collapse" id="navbarCollapse">
+                            <ul className='navbar-nav ml-auto'>
+                                <li className='nav-item'>
+                                    <a className='nav-link active' href='#home'>Home</a>
+                                </li>
+                                <li className='nav-item'>
+                                    <a className='nav-link' href='#about'>About</a>
+                                </li>
+                                <li className='nav-item'>
+                                    <a className='nav-link' href='#service'>Service</a>
+                                </li>
+                                <li className='nav-item'>
+                                    <a className='nav-link' href='#portfolio'>Portfolio</a>
+                                </li>
+                                <li className='nav-item'>
+                                    <a className='nav-link' href='#blog'>Blogs</a>
+                                </li>
+                                <li className='nav-item'>
+                                    <a className='nav-link' href='#Contact Us'>Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-            <section id="home">
-                <div className="row justify-content-center">
-                    <img src={company7} alt="company7"></img>
+                </nav>
+            </section>
+            <section id="home pt-5">
+                <div className="container-fluid pt-5">
+                    <div className="row pt-3">
+                        <img src={company7} alt="company7" backgroundSize="cover" position="absolute"></img>
+                    </div>
                 </div>
             </section>
             <section id="about">
@@ -84,11 +86,11 @@ function Navbar() {
                             </div>
                             <div className="icons pt-4">
                                 <i className="iconrefrence">
-                                    <FaFacebookSquare className="mx-1" id="ic" />
-                                    <FaSkype className="mx-1" id="ic" />
-                                    <FaTwitterSquare className="mx-1" id="ic" />
-                                    <FaWhatsappSquare className="mx-1" id="ic" />
-                                    <FaGooglePlus className="mx-1" id="ic" />
+                                    <FaFacebookF className="mx-1" id="ic" />
+                                    <FaTwitter className="mx-1" id="ic" />
+                                    <FaWhatsapp className="mx-1" id="ic" />
+                                    <FaGooglePlusG className="mx-1" id="ic" />
+                                    <FaLinkedinIn className="mx-1" id="ic" />
                                 </i>
                             </div>
                             <div className="pt-5">
@@ -343,29 +345,29 @@ function Navbar() {
                         <div className="col-lg-12 py-4">
                             <div className="form-group">
                                 <label>How can we help you.....</label>
-                                <input type="text" className="form-control"  style={{ border: "none",height:"100px", borderBottom: "2px solid black", borderRadius: "0px", boxShadow: "none" }} />
+                                <input type="text" className="form-control" style={{ border: "none", height: "100px", borderBottom: "2px solid black", borderRadius: "0px", boxShadow: "none" }} />
                             </div>
                         </div>
                     </div>
                     <div className="row">
-                        <div style={{ textAlign: 'center', alignItems: 'center', fontWeight: "250x", border:'none' }}>
-                            <button type="button" style={{ textAlign: 'center',  border:'none', backgroundColor:'black',color:'white',height:'50px',width:'150px' }} >SEND MESSAGE</button>
+                        <div style={{ textAlign: 'center', alignItems: 'center', fontWeight: "250x", border: 'none' }}>
+                            <button type="button" style={{ textAlign: 'center', border: 'none', backgroundColor: 'black', color: 'white', height: '50px', width: '150px' }} >SEND MESSAGE</button>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id='footer' className="pt-5 bg-dark" style={{color:'white'}}>
+            <section id='footer' className="pt-5 bg-dark" style={{ color: 'white' }}>
                 <div className="container pt-5">
-                    <div className="row py-3" style={{textAlign:'center', borderBottom:"1px solid "}}>
+                    <div className="row py-3" style={{ textAlign: 'center', borderBottom: "1px solid " }}>
                         <div className="col-lg-3">
                             <h5>MUKESH KUMNAR</h5>
                             <p>Web Devloper and Designer</p>
                         </div>
                         <div className="col-lg-3">
-                        <h5>PHONE NO.</h5>
-                        <p>(+91)9729739811</p>
+                            <h5>PHONE NO.</h5>
+                            <p>(+91)9729739811</p>
                         </div>
-                      
+
                         <div className="col-lg-3">
                             <h5>EMAIL</h5>
                             <p>mkverma97297@gmail.com</p>
@@ -375,10 +377,10 @@ function Navbar() {
                             <p>Gill Telecom Service Hisar Haryana India</p>
                         </div>
                     </div>
-                    <div className="row pt-5" style={{textAlign:'center',alignItems:'center'}}>
-                      <div className="container pt-5">
-                      <p>Mukesh © 2021. All Right Reserved, Designed By Mukesh-verma.</p>
-                      </div>
+                    <div className="row pt-5" style={{ textAlign: 'center', alignItems: 'center' }}>
+                        <div className="container pt-5">
+                            <p>Mukesh © 2021. All Right Reserved, Designed By Mukesh-verma.</p>
+                        </div>
                     </div>
                 </div>
             </section>
