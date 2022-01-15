@@ -9,7 +9,7 @@ import company5 from '../images/company5.jpg'
 import pp from '../images/pp.jpg'
 import seema from '../images/seema.jpg'
 import mk from'../images/mk.jpg'
-import mks2 from'../images/mks2.jpg'
+import mks3 from'../images/mks3.jpg'
 import work from '../images/work.jpg'
 import work1 from '../images/work1.jpg'
 import work2 from '../images/work2.jpg'
@@ -25,7 +25,7 @@ function Navbar() {
     return (
         <div>
             <section>
-                <nav className='navbar navbar-expand-lg navbar-light bg-light fixed-top  '>
+                <nav className='navbar navbar-expand-lg fixed-top bg-light navbar-light  ' style={{color:"blue"}}>
                     <div className='container'>
                         <a className='navbar-brand logo' href="/">
                             <img src={mukesh} height='60px' width='60px;' className='rounded-pill' alt='logo' />
@@ -59,7 +59,7 @@ function Navbar() {
                     </div>
                 </nav>
             </section>
-            <section id="home pt-5">
+            <section id="home">
                 <div className="container-fluid pt-5">
                     <div className="row pt-3">
                         <img src={work} alt="company7" backgroundSize="cover" position="absolute"></img>
@@ -242,7 +242,7 @@ function Navbar() {
                     </div>
                     <div className="row py-5 justify-content-center">
                         <div className="col-lg-4">
-                            <div className="card" style={{ border: 'none', }}>
+                            <div className="card mb-5" style={{ border: 'none', }}>
                                 <img src={company5} alt="card1" className="img-fluid"></img>
                                 <div className="container pt-5">
                                     <h4 className="py-3">The best of web design and web design inspiration</h4>
@@ -260,7 +260,7 @@ function Navbar() {
                             </div>
                         </div>
                         <div className="col-lg-4">
-                            <div className="card" style={{ border: 'none', backgroundColor: 'white' }}>
+                            <div className="card mb-5" style={{ border: 'none', backgroundColor: 'white' }}>
                                 <img src={company3} alt="card2" className="img-fluid"></img>
                                 <div className="container pt-5">
                                     <h4 className="py-3">The best of web design and web design inspiration</h4>
@@ -278,7 +278,7 @@ function Navbar() {
                             </div>
                         </div>
                         <div className="col-lg-4">
-                            <div className="card" style={{ border: 'none', backgroundColor: 'white' }}>
+                            <div className="card mb-5" style={{ border: 'none', backgroundColor: 'white' }}>
                                 <img src={company4} alt="card3" className="img-fluid"></img>
                                 <div className="container pt-5">
                                     <h4 className="py-3">The best of web design and web design inspiration</h4>
@@ -299,9 +299,9 @@ function Navbar() {
                     </div>
                 </div>
             </section >
-            <section className=' py-5' style={{ backgroundImage: `url(${mks2})`,backgroundRepeat:"no-repeat", backgroundSize:'cover' }} >
-                <div className="container py-5">
-                    <div className="row py-5" style={{ textAlign: 'center', alignItems: 'center', position: 'relative', color: '#408cbf', fontWeight: "800px",fontSize:"20px", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundAttachment: "fixed", overflow: 'hidden' }}>
+            <section className='' style={{ backgroundImage: `url(${mks3})`,backgroundRepeat:"no-repeat", backgroundSize:'cover',textAlign:'center',alignItems:'center' }} >
+                <div className="container">
+                    <div className="row " style={{ textAlign: 'center', alignItems: 'center', position: 'relative', color: 'white', fontWeight: "800px",fontSize:"20px", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundAttachment: "fixed", overflow: 'hidden' }}>
                         <Carousel className="py-5">
                             <Carousel.Item className="py-5">
                                 <img src={mukesh} alt="mukesh-carousel" className="rounded-pill" style={{ width: "130px", height: '130px' }}></img>
