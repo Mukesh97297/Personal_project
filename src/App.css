@@ -7,12 +7,16 @@
 
 }
 #ic{
-  font-size: 50px;;
+  font-size: 27px;;
 }
 .dbutton{
   background-color: rgb(43, 38, 38);
-  color: white;
+  color: rgb(187, 173, 173);
   border: none;
+  height: 33px;
+  width: 120px;
+  text-align: center;
+  align-items: center;
   border-radius: 2px;
 }
 .service{
@@ -47,4 +51,5 @@
 .iconrefernce{
   background-color: white;;
 }
+
 
