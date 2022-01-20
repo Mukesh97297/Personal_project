@@ -11,7 +11,6 @@ import work from '../images/work.jpg'
 import sk from '../images/sk.jpg';
 import sk1 from '../images/sk1.jpg';
 import sk5 from '../images/sk5.jpg';
-import sk4 from '../images/sk4.jpg';
 import mukesh1 from '../images/mukesh1.jpg'
 import {
     FaTwitter, FaFacebookF, FaWhatsapp, FaRocket, FaGooglePlusG, FaLinkedinIn, FaPencilAlt, FaUsers, FaRegEdit, FaTrophy, FaThumbsUp
