@@ -1,8 +1,5 @@
 import React from "react";
 import mukesh from "../images/mukesh.jpg";
-import syam from '../images/syam.jpg'
-import mukesh3 from "../images/mukesh3.jpg";
-import company1 from '../images/company1.jpg'
 import company3 from '../images/company3.jpg'
 import company4 from '../images/company4.jpg'
 import company5 from '../images/company5.jpg'
@@ -11,8 +8,11 @@ import seema from '../images/seema.jpg'
 import mk from'../images/mk.jpg'
 import mks3 from'../images/mks3.jpg'
 import work from '../images/work.jpg'
-import work1 from '../images/work1.jpg'
-import work2 from '../images/work2.jpg'
+import sk from '../images/sk.jpg';
+import sk1 from '../images/sk1.jpg';
+import sk5 from '../images/sk5.jpg';
+import sk4 from '../images/sk4.jpg';
+import mukesh1 from '../images/mukesh1.jpg'
 import {
     FaTwitter, FaFacebookF, FaWhatsapp, FaRocket, FaGooglePlusG, FaLinkedinIn, FaPencilAlt, FaUsers, FaRegEdit, FaTrophy, FaThumbsUp
 } from "react-icons/fa";
@@ -23,9 +23,9 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Navbar() {
     return (
-        <div>
+        <div className="bg-light">
             <section>
-                <nav className='navbar navbar-expand-lg fixed-top bg-light navbar-light  ' style={{color:"blue"}}>
+                <nav className='navbar navbar-expand-lg fixed-top navbar-light bg-light ' style={{color:"blue"}}>
                     <div className='container'>
                         <a className='navbar-brand logo' href="/">
                             <img src={mukesh} height='60px' width='60px;' className='rounded-pill' alt='logo' />
@@ -158,7 +158,7 @@ function Navbar() {
                                 <h3 className="py-4">Creative Design</h3>
                                 <p className=" paragraph py-4">“ Where do new ideas come from? The answer is simple: differences.
                                  Creativity comes from unlikely juxtapositions.
-                                 ” –Miss Seema</p>
+                                 ”Miss Seema</p>
                             </div>
                         </div>
                         <div className="col-lg-4 col-sm-6 py-4">
@@ -212,22 +212,22 @@ function Navbar() {
                     </div>
                     <div className="row mb-2 py-5">
                         <div className="col-md-4 col-sm-12 pt-3">
-                            <img src={work} alt="company-3" className="img-fluid" ></img>
+                            <img src={pp} alt="company-3" className="img-fluid" ></img>
                         </div>
                         <div className="col-md-4 col-sm-1 pt-3">
-                            <img src={company1} alt="company4" className="img-fluid" ></img>
+                            <img src={mukesh} alt="company4" className="img-fluid" ></img>
                         </div>
                         <div className="col-md-4 col-sm-12 pt-3">
-                            <img src={work1} alt="company4" className="img-fluid" ></img>
+                            <img src={mukesh1} alt="company4" className="img-fluid" ></img>
                         </div>
                         <div className="col-md-4 col-sm-12 pt-3">
-                            <img src={work2} alt="company5" className="img-fluid" ></img>
+                            <img src={sk} alt="company5" className="img-fluid" ></img>
                         </div>
                         <div className="col-md-4 col-sm-12 pt-3">
-                            <img src={syam} alt="syam" className="img-fluid" ></img>
+                            <img src={sk1} alt="syam" className="img-fluid"></img>
                         </div>
                         <div className="col-md-4 col-sm-12 pt-3">
-                            <img src={mukesh3} alt="mukesh3" className="img-fluid"  ></img>
+                            <img src={sk5} alt="mukesh3" className="img-fluid"  ></img>
                         </div>
                     </div>
                 </div>
