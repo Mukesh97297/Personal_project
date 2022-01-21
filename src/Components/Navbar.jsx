@@ -12,6 +12,10 @@ import sk from '../images/sk.jpg';
 import sk1 from '../images/sk1.jpg';
 import sk5 from '../images/sk5.jpg';
 import mukesh1 from '../images/mukesh1.jpg'
+import {
+    FaTwitter, FaFacebookF, FaWhatsapp, FaRocket, FaGooglePlusG, FaLinkedinIn, FaPencilAlt, FaUsers, FaRegEdit, FaTrophy, FaThumbsUp
+} from "react-icons/fa";
+import { MdOutlineComputer, MdOutlineSettingsSuggest, MdPhoneIphone, MdSupport } from "react-icons/md";
 import CountUp from 'react-countup';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -90,13 +94,13 @@ function Navbar() {
 
                             </div>
                             <div className="icons pt-4">
-                           
-                                <a href="/" className="iconrefrence"> <i class="fab fa-facebook-f"></i></a>
-                                <a href="/" className="iconrefrence ml-5"><i className="fab fa-twitter"></i></a>
-                                <a href="/" className="iconrefrence ml-5"><i className="fab fa-whatsapp"></i></a>
-                                <a href="/" className="iconrefrence ml-5"><i className="fab fa-google-plus-g"></i></a>
-                                <a href="/" className="iconrefrence ml-5"><i className="fab fa-linkedin-in"></i></a>
-                                
+                                <i className="iconrefrence">
+                                    <FaFacebookF id="ic" />
+                                    <FaTwitter className="ml-5" id="ic" />
+                                    <FaWhatsapp className="ml-5" id="ic" />
+                                    <FaGooglePlusG className="ml-5" id="ic" />
+                                    <FaLinkedinIn className="ml-5" id="ic" />
+                                </i>
                             </div>
                             <div className="pt-4">
                                 <a href="#Contact Us" type="button" className="dbutton">Contact Me</a>
@@ -114,17 +118,17 @@ function Navbar() {
                         </div>
                         <div className="col-lg-4 col-sm-6 py-4">
                             <div>
-                                <a href="/" ><i className="fas fa-laptop" id="web-design"></i></a>
+                                <MdOutlineComputer className="web-design" />
                                 <h3 className="py-4">Web Design</h3>
                                 <p className="paragraph py-4">"A designer knows he has achieved perfection
                                  not when there is nothing left to add, but when there is nothing left to take away.
-                                 " -- Mr Mukesh, developer and designer</p>
+                                 " -- Mr Mukesh, devloper and designer</p>
                             </div>
                         </div>
                         <div className="col-lg-4 col-sm-6 py-4">
                             <div>
-                                <a href="/" ><i className="fas fa-cogs" id="web-design"></i></a>
-                                <h3 className="py-4">Web development</h3>
+                                <MdOutlineSettingsSuggest className="web-design" />
+                                <h3 className="py-4">Web Devlopment</h3>
                                 <p className="paragraph py-4">“As the web development industry has become so
                                  huge in the last two decades, it has brought the attention of
                                   many people who are constantly sharing their own opinion.</p>
@@ -132,8 +136,7 @@ function Navbar() {
                         </div>
                         <div className="col-lg-4 col-sm-6 py-4">
                             <div>
-                              
-                                <a href="/" ><i className="fas fa-mobile-alt"id="web-design"></i></a>
+                                <MdPhoneIphone className="web-design " />
                                 <h3 className="py-4">Responsive Design</h3>
                                 <p className="paragraph py-4"> “The public is more familiar with bad design than good design. It is,
                                  in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes
@@ -142,15 +145,15 @@ function Navbar() {
                         </div>
                         <div className="col-lg-4 col-sm-6 py-4">
                             <div>
-                                <a href="/"><i className="fas fa-rocket" id="web-design"></i></a>
+                                <FaRocket className="web-design" />
                                 <h3 className="py-4">Branding Identity</h3>
                                 <p className="paragraph py-4">“ A brand for a company is like a reputation for a person.
-                                 You earn reputation by trying to do hard things well ” ... Md Rizwan Web developer And Designer</p>
+                                 You earn reputation by trying to do hard things well ” ... Md Rizwan Web devloper And Designer</p>
                             </div>
                         </div>
                         <div className="col-lg-4 col-sm-6 py-4">
                             <div>
-                                <a href="/" ><i className="fas fa-pencil-alt" id="web-design"></i></a>
+                                <FaPencilAlt className="web-design" />
                                 <h3 className="py-4">Creative Design</h3>
                                 <p className=" paragraph py-4">“ Where do new ideas come from? The answer is simple: differences.
                                  Creativity comes from unlikely juxtapositions.
@@ -159,7 +162,7 @@ function Navbar() {
                         </div>
                         <div className="col-lg-4 col-sm-6 py-4">
                             <div>
-                                <a href="/"><i className="far fa-life-ring" id="web-design"></i></a>
+                                <MdSupport className="web-design" />
                                 <h3 className="py-4">Support</h3>
                                 <p className="paragraph py-4">“To give real service you must add something which 
                                 cannot be bought or measured with money,
@@ -176,22 +179,22 @@ function Navbar() {
                 <div className="container py-5">
                     <div className="row py-4" >
                         <div className="col-md-3 col-sm-12 py-5">
-                            <a href="/"><i className="fas fa-users" id="happy-client"></i></a>
+                            <FaUsers className="happy-client" />
                             <h2><CountUp start={10} end={250} duration={5} /></h2>
                             <h3>Happy Clients</h3>
                         </div>
                         <div className="col-md-3 col-sm-12 py-5">
-                            <a href="/"><i className="fas fa-thumbs-up" id="happy-client"></i></a>
+                            <FaThumbsUp className="happy-client" />
                             <h2><CountUp start={10} end={750} duration={5} /></h2>
                             <h3>Projects Completed</h3>
                         </div>
                         <div className="col-md-3 col-sm-12 py-5">
-                            <a href="/"><i class="fas fa-edit" id="happy-client"></i></a>
+                            <FaRegEdit className="happy-client" />
                             <h2><CountUp start={10} end={1100} duration={5} /></h2>
                             <h3>Lines Of Code</h3>
                         </div>
                         <div className="col-md-3 col-sm-12 py-5">
-                            <a href="/"><i class="fas fa-trophy" id="happy-client"></i></a>
+                            <FaTrophy className="happy-client" />
                             <h2><CountUp start={10} end={200} duration={5} /></h2>
                             <h3>Awards Achieved</h3>
                         </div>
@@ -302,7 +305,7 @@ function Navbar() {
                             <Carousel.Item className="py-5">
                                 <img src={mukesh} alt="mukesh-carousel" className="rounded-pill" style={{ width: "130px", height: '130px' }}></img>
                                 <h3>Mr Mukesh Verma</h3>
-                                <p>UI/UX Designer and developer</p>
+                                <p>UI/UX Designer and Devloper</p>
                                 <p>Hello! I’m Mukesh Verma from Hisar, India. I code and create web elements
                                     for amazing people around the world. I like work with new people.
                                     New people are new experiences. Web Developer with over 1 years of experience.
@@ -314,7 +317,7 @@ function Navbar() {
                             <Carousel.Item className="py-5">
                                 <img src={seema} alt="mukesh-carousel" className="rounded-pill" style={{ width: "130px", height: '130px' }}></img>
                                 <h3>Miss Seema </h3>
-                                <p>UI/UX Designer and developer</p>
+                                <p>UI/UX Designer and Devloper</p>
                                 <p>Hello! I’m Seema from Hisar, India. I code and create web elements
                                     for amazing people around the world. I like work with new people.
                                     New people are new experiences. Web Developer with over 1 years of experience.
@@ -326,7 +329,7 @@ function Navbar() {
                             <Carousel.Item className="py-5">
                                 <img src={pp} alt="mukesh-carousel" className="rounded-pill" style={{ width: "130px", height: '130px' }}></img>
                                 <h3>Mr Md Rizwan</h3>
-                                <p>UI/UX Designer and developer</p>
+                                <p>UI/UX Designer and Devloper</p>
                                 <p>Hello! I’m Md Rizwan from Hisar, India. I code and create web elements
                                     for amazing people around the world. I like work with new people.
                                     New people are new experiences. Web Developer with over 1 years of experience.
@@ -377,7 +380,7 @@ function Navbar() {
                     <div className="row py-3" style={{ textAlign: 'center', borderBottom: "1px solid " }}>
                         <div className="col-lg-3">
                             <h5>Mukesh Kumar</h5>
-                            <p>Web developer and Designer</p>
+                            <p>Web Devloper and Designer</p>
                         </div>
                         <div className="col-lg-3">
                             <h5>Phone No.</h5>

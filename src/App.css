@@ -6,6 +6,9 @@
   color: white;
 
 }
+#ic{
+  font-size: 27px;;
+}
 .dbutton{
   background-color: rgb(43, 38, 38);
   color: rgb(187, 173, 173);
@@ -25,7 +28,7 @@
   text-align: center;
   align-items: center;
 }
-#web-design{
+.web-design{
     font-size: 30px;
     text-align: center;
     align-items: center;
@@ -40,17 +43,13 @@
 .paragraph{
   font-size: large;
 }
-#happy-client{
+.happy-client{
  
   font-size: 40px;
   color: white;
 }
-.iconrefrence{
-  font-size: 27px;
-}
-.iconrefrence,i{
-  background-color: transparent; 
-  color: black;
+.iconrefernce{
+  background-color: white;;
 }
 
 
